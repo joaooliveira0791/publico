@@ -1,0 +1,65 @@
+*{
+    color: #ffffff;
+    
+}
+/* TODAS AS PÁGINAS COM H1 */
+h1{
+    text-align: center;
+    /* alinha o texto no centro */
+    font-size: 20px;
+    /* Tamanho da fonte do texto */
+    margin-top: 30px;
+  
+}
+/* estilizando a página da localização */
+
+.localizacao{
+
+       width: 100%;
+    /* largura */
+    display: flex;
+    /* abri o flex para utilizar as propriedades dele */
+    flex-direction: column;
+    /* deixando os elementos em coluna */
+    align-items: center;
+    /* deixando os elementos centralizado (verticalmente) */
+    justify-content: center;
+    /* deixando os elementos centralizados ( Horizontalmente) */
+}
+.localizacao iframe {
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+/* Galeria de Fotos */
+.galeria-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     gap: 2vw;
+     /* da espaçamento entre as linhas e colunas das imagens */
+     margin-top: 30px;
+     transition: 1s;
+
+}
+
+.galeria-items {
+    width: 300px;
+    height: 250px;
+    border: 10px solid white;
+    flex-grow: 1;
+/* O que isso faz é que todos os itens se expander igualmente para preencher o espaço disponivel no container flexivel. se houver  espaço extra,
+ todos os itens irao crescer proporcionalmente, garantindo que o espaço seja preenchido de maneiro uniforme */
+}
+.galeria-items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     /* Deve ser dimensionado e posicionado dentro de seu conteiner, mantendo sua proporçao original e cobrindo todo o espaço disponivel, sem distorçoes */
+}
+.galeria-items:hover{
+    transform:scale(1.2);
+    border: red;
+    border-radius: 10px;
+    
+}
